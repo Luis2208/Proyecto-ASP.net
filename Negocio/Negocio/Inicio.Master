@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Inicio.master.cs" Inherits="Negocio.Inicio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Estilos/fontello.css" rel="stylesheet" />
+    <link href="Estilos/estilos.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 30%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 0;
+        }
+        .footer {
+            text-align: center;
+            /*position: fixed;*/
+            bottom:0%;
+            /*z-index:3;*/
+            height: auto;
+            /*padding-top:30px;
+            padding-bottom:30px;*/
+            width: 100%;
+            background-color:#2f2f2f;
+            color:#FFFFFF;
+            font-size:16px;
+        }
+        .auto-style2 {
+            text-align: center;
+            font-family: cursive;
+            font-size: xx-large;
+            background-color: hsl(0, 100%, 75%);
+            color: #ffffff;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+                <div>
+           
+            <asp:Button ID="BttnInicio" runat="server" Text="Iniciar Sesión"   style="position:absolute; right:137px; top:10px; width: 100px;" OnClick="Bttn1_Click"/>
+            <asp:Button ID="Bttn2" runat="server" Text="Registrarse" style="position:absolute; right:27px; top:10px; width: 100px;" OnClick="Bttn2_Click"  />
+        </div>
+
+       	<header>
+		<div class="auto-style1">
+			<img src="Imagenes/logos.png" class="ime"/>
+		</div>
+        <div>
+            <center><img src="Imagenes/logo.png" class="ime2"/></center>
+        </div>
+		<div class="navegacion">
+			<div class="boton-menu">
+				<a href="#"><span class="icon icon-menu"></span></a>
+			</div>
+			<nav>
+				<ul class="menu">
+					
+                    <li><a href ="Default.aspx">Inicio</a></li>
+                    <li><a href="Productos.aspx">Productos</a></li>
+                    <li><a href = "Nosotros.aspx" > Nosotros </a></li>
+                    <li><a href= "DondeEstamos.aspx">Donde estamos</a></li>
+                    <li><a href = # > Contacto </a></li>
+
+				</ul>
+			</nav>
+		</div>
+       <div>
+       <table style="width: 100%;">
+           <tr>
+               <td class="auto-style2">Bienvenido a Pastelería Délice
+               </td>
+           </tr>
+           <tr>
+               <td class="auto-style2">¡Gracias por su preferencia! <br />
+               </td>
+           </tr>
+           </table>
+
+   </div>
+	</header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+            </asp:ContentPlaceHolder>
+       
+    </form>
+    <div class="footer">
+        © 2019, Delice es marca registrada. Todos los derechos reservados.
+    </div>
+</body>
+</html>

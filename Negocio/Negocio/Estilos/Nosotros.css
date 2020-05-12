@@ -1,0 +1,37 @@
+﻿body {
+    
+}
+
+.padingFormatoPics {
+    width: 98%;
+    padding-left: 25%;
+    padding-right: 20%;
+}
+
+.PicHistoriaLeft {
+    display: inline-block;
+    vertical-align: middle;
+    width: 37%;
+    text-align: center;
+    -webkit-border-radius: 10000px;
+    -moz-border-radius: 10000px;
+    border-radius: 10000px;
+}
+
+.TextPicHistoria {
+    width: 60%;
+    display: inline-block;
+    vertical-align: central;
+    text-align: justify;
+}
+
+.TitleDélicePic1 {
+    font-size: 48px;
+    color: #b52025;
+}
+
+.TextPic1 {
+    font-size: 18px;
+    color: #484848;
+}
+

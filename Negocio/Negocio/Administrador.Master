@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Administrador.master.cs" Inherits="Negocio.Administrador1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+     <link href="Estilos/Administrador.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/main.js"></script>
+    <style type="text/css">
+        .auto-style1 {
+            width: 30%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px 0;
+        }
+        .footer {
+            text-align: center;
+            /*position: fixed;*/
+            bottom:0%;
+            /*z-index:3;*/
+            height: auto;
+            /*padding-top:30px;
+            padding-bottom:30px;*/
+            width: 100%;
+            background-color:#2f2f2f;
+            color:#FFFFFF;
+            font-size:16px;
+        }
+        .botones {
+            text-align: right;
+        }
+        .auto-style3 {
+            text-align: center;
+            font-size: xx-large;
+            height: 38px;
+        }
+        .auto-style4 {
+            text-align: center;
+        }
+        </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="botones">
+            <asp:Button ID="Button1" runat="server" Text="Iniciar Sesion" OnClick="Button1_Click" />
+            <asp:Button ID="Button2" runat="server" Text="Salir" OnClick="Button2_Click" />
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td class="auto-style3" colspan="3">Bienvenido Administrador</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="auto-style4">
+                    <asp:Label ID="LblAdmin" runat="server" Text="Label"></asp:Label>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <header>
+		<div class="auto-style1">
+			<img src="Imagenes/logos.png" class="ime"/>
+		</div>
+        <div>
+            <center><img src="Imagenes/logo.png" class="ime2"/></center>
+        </div>
+		<div class="navegacion">
+			<div class="boton-menu">
+				<a href="#"><span class="icon icon-menu"></span></a>
+			</div>
+			<nav>
+				<ul class="menu">
+
+					<li><a href="RegistroProductos.aspx">Registro de Productos</a></li>
+                    <li><a href ="Pedidos.aspx" >Pedidos</a></li>
+                    <li><a href = "Clientes.aspx" > Clientes </a></li>
+                    <li><a href ="Inicio2.aspx">Inicio</a></li>
+                    <li><a href="Productos2.aspx">Productos</a></li>
+                    <li><a href = "Nosotros2.aspx" > Nosotros </a></li>
+                    <li><a href= "DondeEstamos2.aspx">Donde estamos</a></li>
+                    <li><a href = # > Contacto </a></li>
+                 
+
+				</ul>
+			</nav>
+		</div>
+	</header>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <div class="footer">
+        © 2019, Delice es marca registrada. Todos los derechos reservados.
+    </div>
+</body>
+</html>
