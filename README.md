@@ -1,7 +1,7 @@
 # Proyecto-ASP.net
 Este proyecto escolar fue realizado con ASP.Net utilizando Formularios Web Forms con página maestra. 
 Adjunto script de la base de datos en MySQL
-Deberan correr la aplicacion despes el "Defaul.aspx"
+Deberan correr la aplicacion desde el "Defaul.aspx"
 -- phpMyAdmin SQL Dump
 -- version 4.9.1
 -- https://www.phpmyadmin.net/
